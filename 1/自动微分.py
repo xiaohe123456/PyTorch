@@ -1,6 +1,10 @@
 # audograd是PyTorch中所有神经网络的核心。autograd软件包为tensors上的所有操作提供自动微分。
 # 它是一个由运行定义的框架，这意味着以代码运行的方式定义你的后向传播，并且每次迭代都可以不同。
 
+# tensor的两个重要属性:
+# .grad：记录梯度
+# .grad_fn：记录操作
+
 import torch
 
 # 创建一个张量
