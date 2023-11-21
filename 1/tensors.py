@@ -45,3 +45,16 @@ print(result)
 y.add_(x)
 print(y)
 
+# 可以使用标准的NumPy类似的索引操作
+print(x[:, 1])
+
+# 改变大小：使用torch.view可以改变一个tensor的大小或者形状
+x = torch.randn(4, 4)
+y = x.view(16)
+z = x.view(-1, 8)
+print(x.size(), y.size(), z.size())
+
+# 使用.item()来获得tensor的value
+x = torch.randn(1)
+print(x)
+print(x.item())
